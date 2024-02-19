@@ -12,15 +12,15 @@ DATA = "data/wsj.parse"
 def count_nodes(query: str, forest: List[tree.ParentedTree]) -> int:
     """Computes the number of nodes which match a TGrep query.
 
-    This function runs a tgrep_nodes query, catches the resulting generator,
+    This function runs a TGrep2 query, catches the resulting generator,
     and returns the number of matching nodes.
 
     Args:
-        query: a tgrep query string
-        forest: a list of one or more `ParentedTree`s to be queried
+        query: a TGrep2 query string.
+        forest: a list of one or more `ParentedTree`s to be queried.
 
     Returns:
-        the number of matching nodes.
+        The number of matching nodes.
     """
     # This a generator whose elements are, for each sentence, a list
     # of the matching nodes.
