@@ -35,14 +35,14 @@ def main() -> None:
         for line in source:
             forest.append(tree.ParentedTree.fromstring(line.rstrip()))
     # Runs queries.
-    print(f"1:\t{count_nodes('FRAG', forest):>5,}")
-    print(f"2:\t{count_nodes('CD', forest):>5,}")
+    print(f"1:\t{count_nodes('PP', forest):>5,}")
+    print(f"2:\t{count_nodes('FRAG', forest):>5,}")
     print(f"3:\t{count_nodes('NP < DT', forest):>5,}")
-    print(f"4:\t{count_nodes('NP < (DT < a)', forest):>5,}")
-    print(f"5:\t{count_nodes('NP < (NP $ CC $ NP)', forest):>5,}")
-    print(f"6.\t{count_nodes('VP << NP', forest):>5,}")
-    print(f"7.\t{count_nodes('VP < NP', forest):>5,}")
-    print(f"8.\t{count_nodes('VP !< NP', forest):>5,}")
+    print(f"4:\t{count_nodes('NP < POS', forest):5,}")
+    print(f"5:\t{count_nodes('NP < (DT < (a | an))', forest):>5,}")
+    print(f"6:\t{count_nodes('NP < (NP $ CC $ NP)', forest):>5,}")
+    print(f"7.\t{count_nodes('VP << NP', forest):>5,}")
+    print(f"8.\t{count_nodes('VP < NP', forest):>5,}")
     print(f"9.\t{count_nodes('VP < (NP $ NP)', forest):>5,}")
     print(f"10.\t{count_nodes('VP < (NP < PP)', forest):>5,}")
 
