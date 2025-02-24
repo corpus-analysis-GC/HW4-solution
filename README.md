@@ -11,9 +11,9 @@ The queries and counts are:
 9.  `VP < (NP $ NP)`: 7
 10. `VP < (NP < PP)`: 139
 
-See [`hw4.py`](hw4.py) for the code. Sample output:
+See [`query.py`](query.py) for the code. Sample output:
 
-    $ ./hw4.py 
+    $ ./query.py
     1:  1,087
     2:     18
     3:  1,128
