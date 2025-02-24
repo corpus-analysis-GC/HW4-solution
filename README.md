@@ -4,7 +4,7 @@ The queries and counts are:
 2.  `FRAG`: 18
 3.  `NP < DT`: 1,128
 4.  `NP < POS`: 177
-5.  `NP ( DT < (a | an))`: 324
+5.  `NP < (DT < (a | an))`: 324
 6.  `NP < (NP $ CC $ NP)`: 128
 7.  `VP << NP`: 1,535
 8.  `VP < NP`: 548
